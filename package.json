@@ -1,7 +1,7 @@
 {
   "name": "react-native-proximity-sensor",
   "version": "0.1.0",
-  "description": "get proximity sensor data",
+  "description": "Get proximity sensor data",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",

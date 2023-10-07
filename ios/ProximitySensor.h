@@ -1,12 +1,21 @@
+// RNSensorsProximity.h
 
-#ifdef RCT_NEW_ARCH_ENABLED
-#import "RNProximitySensorSpec.h"
-
-@interface ProximitySensor : NSObject <NativeProximitySensorSpec>
-#else
 #import <React/RCTBridgeModule.h>
+#import <UIKit/UIKit.h>
+#import <React/RCTEventEmitter.h>
 
-@interface ProximitySensor : NSObject <RCTBridgeModule>
-#endif
+@interface RNSensorsProximity : RCTEventEmitter <RCTBridgeModule> {
+    int logLevel;
+    bool hasListeners;
+}
+
+- (void) isAvailableWithResolver:(RCTPromiseResolveBlock) resolve
+         rejecter:(RCTPromiseRejectBlock) reject;
+- (void) setUpdateInterval:(double) interval;
+- (void) getUpdateInterval:(RCTResponseSenderBlock) cb;
+- (void) setLogLevel:(int) level;
+- (void) getData:(RCTResponseSenderBlock) cb;
+- (void) startUpdates;
+- (void) stopUpdates;
 
 @end
