@@ -1,17 +1,17 @@
-# react-native-proximity-sensor
+# rn-proximity-sensor
 
 get proximity sensor data
 
 ## Installation
 
 ```sh
-npm install react-native-proximity-sensor
+npm install rn-proximity-sensor
 ```
 
 ## Usage
 
 ```js
-import proximity, { SubscriptionRef } from 'react-native-proximity-sensor';
+import proximity, { SubscriptionRef } from 'rn-proximity-sensor';
 
 // ...
 

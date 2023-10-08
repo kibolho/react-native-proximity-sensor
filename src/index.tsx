@@ -10,7 +10,7 @@ import type { Unsubscribable } from 'rxjs';
 import * as RNSensors from './rnsensors';
 
 const LINKING_ERROR =
-  `The package 'react-native-proximity-sensor' doesn't seem to be linked. Make sure: \n\n` +
+  `The package 'rn-proximity-sensor' doesn't seem to be linked. Make sure: \n\n` +
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';

@@ -10929,57 +10929,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-proximity-sensor-example@workspace:example":
-  version: 0.0.0-use.local
-  resolution: "react-native-proximity-sensor-example@workspace:example"
-  dependencies:
-    "@babel/core": ^7.20.0
-    "@babel/preset-env": ^7.20.0
-    "@babel/runtime": ^7.20.0
-    "@react-native/metro-config": ^0.72.11
-    "@types/react-native-vector-icons": ^6.4.15
-    babel-plugin-module-resolver: ^5.0.0
-    metro-react-native-babel-preset: 0.76.8
-    pod-install: ^0.1.0
-    react: 18.2.0
-    react-native: 0.72.5
-    react-native-linear-gradient: ^2.8.3
-    react-native-shimmer-placeholder: ^2.0.9
-    react-native-vector-icons: ^10.0.0
-  languageName: unknown
-  linkType: soft
-
-"react-native-proximity-sensor@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "react-native-proximity-sensor@workspace:."
-  dependencies:
-    "@commitlint/config-conventional": ^17.0.2
-    "@evilmartians/lefthook": ^1.5.0
-    "@react-native/eslint-config": ^0.72.2
-    "@release-it/conventional-changelog": ^5.0.0
-    "@types/jest": ^28.1.2
-    "@types/react": ~17.0.21
-    "@types/react-native": 0.70.0
-    commitlint: ^17.0.2
-    del-cli: ^5.0.0
-    eslint: ^8.4.1
-    eslint-config-prettier: ^8.5.0
-    eslint-plugin-prettier: ^4.0.0
-    jest: ^28.1.1
-    pod-install: ^0.1.0
-    prettier: ^2.0.5
-    react: 18.2.0
-    react-native: 0.72.5
-    react-native-builder-bob: ^0.20.0
-    release-it: ^15.0.0
-    turbo: ^1.10.7
-    typescript: ^5.0.2
-  peerDependencies:
-    react: "*"
-    react-native: "*"
-  languageName: unknown
-  linkType: soft
-
 "react-native-shimmer-placeholder@npm:^2.0.9":
   version: 2.0.9
   resolution: "react-native-shimmer-placeholder@npm:2.0.9"
@@ -11570,6 +11519,57 @@ __metadata:
   checksum: 3ea587b981a19016297edb96d1ffe48af7e6af69660e3b371dbfc73722a73a0b0e9be5c88089fbeeb866c389c1098e07f64929c7414290504b855f54f901ab10
   languageName: node
   linkType: hard
+
+"rn-proximity-sensor-example@workspace:example":
+  version: 0.0.0-use.local
+  resolution: "rn-proximity-sensor-example@workspace:example"
+  dependencies:
+    "@babel/core": ^7.20.0
+    "@babel/preset-env": ^7.20.0
+    "@babel/runtime": ^7.20.0
+    "@react-native/metro-config": ^0.72.11
+    "@types/react-native-vector-icons": ^6.4.15
+    babel-plugin-module-resolver: ^5.0.0
+    metro-react-native-babel-preset: 0.76.8
+    pod-install: ^0.1.0
+    react: 18.2.0
+    react-native: 0.72.5
+    react-native-linear-gradient: ^2.8.3
+    react-native-shimmer-placeholder: ^2.0.9
+    react-native-vector-icons: ^10.0.0
+  languageName: unknown
+  linkType: soft
+
+"rn-proximity-sensor@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "rn-proximity-sensor@workspace:."
+  dependencies:
+    "@commitlint/config-conventional": ^17.0.2
+    "@evilmartians/lefthook": ^1.5.0
+    "@react-native/eslint-config": ^0.72.2
+    "@release-it/conventional-changelog": ^5.0.0
+    "@types/jest": ^28.1.2
+    "@types/react": ~17.0.21
+    "@types/react-native": 0.70.0
+    commitlint: ^17.0.2
+    del-cli: ^5.0.0
+    eslint: ^8.4.1
+    eslint-config-prettier: ^8.5.0
+    eslint-plugin-prettier: ^4.0.0
+    jest: ^28.1.1
+    pod-install: ^0.1.0
+    prettier: ^2.0.5
+    react: 18.2.0
+    react-native: 0.72.5
+    react-native-builder-bob: ^0.20.0
+    release-it: ^15.0.0
+    turbo: ^1.10.7
+    typescript: ^5.0.2
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  languageName: unknown
+  linkType: soft
 
 "run-applescript@npm:^5.0.0":
   version: 5.0.0

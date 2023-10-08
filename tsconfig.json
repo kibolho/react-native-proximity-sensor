@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-proximity-sensor": ["./src/index"]
+      "rn-proximity-sensor": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

@@ -1,5 +1,5 @@
 {
-  "name": "react-native-proximity-sensor",
+  "name": "rn-proximity-sensor",
   "version": "0.1.0",
   "description": "Get proximity sensor data",
   "main": "lib/commonjs/index",
@@ -26,7 +26,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-proximity-sensor-example",
+    "example": "yarn workspace rn-proximity-sensor-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -39,13 +39,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/kibolho/react-native-proximity-sensor",
+  "repository": "https://github.com/kibolho/rn-proximity-sensor",
   "author": "Abílio Azevedo <abilio10@gmail.com> (https://github.com/kibolho)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kibolho/react-native-proximity-sensor/issues"
+    "url": "https://github.com/kibolho/rn-proximity-sensor/issues"
   },
-  "homepage": "https://github.com/kibolho/react-native-proximity-sensor#readme",
+  "homepage": "https://github.com/kibolho/rn-proximity-sensor#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
