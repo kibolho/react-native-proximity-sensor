@@ -4,7 +4,7 @@ Retrieve proximity sensor data from IOS and Android.
 
 | IOS         | Android           |
 | -----------      | -----------           |
-| ![Example with ios](.github/assets/ProximitySensorIOS.gif)         | ![Example with android](.github/assets/ProximitySensorAndroid.gif)  |
+| ![Example with ios](https://raw.githubusercontent.com/kibolho/react-native-proximity-sensor/HEAD/.github/assets/ProximitySensorIOS.gif)         | ![Example with android](https://raw.githubusercontent.com/kibolho/react-native-proximity-sensor/HEAD/.github/assets/ProximitySensorAndroid.gif)  |
 
 ## Installation
 
