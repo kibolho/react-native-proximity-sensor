@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import {
-  Animated,
   SafeAreaView,
   StyleSheet,
   Text,
@@ -41,7 +40,7 @@ export const App = () => {
       <View style={styles.headerContainer}>
         <Text style={styles.title}>Balance</Text>
       </View>
-      <Animated.View style={styles.bodyContainer} onLayout={changeBalanceSize}>
+      <View style={styles.bodyContainer} onLayout={changeBalanceSize}>
         <Shimmer
           {...balanceSize.current}
           style={styles.linearGradient}
@@ -57,7 +56,7 @@ export const App = () => {
         >
           <Ionicons name={isShowingBalance ? 'eye' : 'eye-off'} size={32} />
         </TouchableOpacity>
-      </Animated.View>
+      </View>
     </SafeAreaView>
   );
 };
@@ -65,8 +64,6 @@ export const App = () => {
 const styles = StyleSheet.create({
   headerContainer: {
     marginHorizontal: 32,
-    flexDirection: 'row',
-    alignItems: 'center',
   },
   bodyContainer: {
     marginHorizontal: 32,
@@ -76,16 +73,18 @@ const styles = StyleSheet.create({
   linearGradient: {
     flex: 1,
     borderRadius: 5,
+    marginRight: 16,
   },
   title: {
-    fontSize: 30,
-    margin: 10,
+    fontSize: 22,
+    margin: 5,
     color: '#333',
   },
   text: {
     fontSize: 24,
     margin: 10,
     color: '#333',
+    fontWeight: 'bold',
   },
 });
 export default App;

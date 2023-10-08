@@ -1,6 +1,6 @@
 # rn-proximity-sensor
 
-get proximity sensor data
+Retrieve proximity sensor data from IOS and Android.
 
 ## Installation
 
@@ -32,6 +32,18 @@ useEffect(() => {
     };
   }, []);
 ```
+
+The subscribe callback function will return ```values``` with the following properties:
+| Property         | Description           | Support        |
+| -----------      | -----------           | -----------    |
+| distance         | Number - 0 to 10cm    | Android & IOS* |
+| is_close         | boolean               | Android & IOS  |
+| is_toggle        | boolean - toggle from one state to another              | Android & IOS  |
+| is_double_toggle | boolean - toggle from not close state to close and back to not close              | Android & IOS  |
+
+* Since in IOS we just have a boolean as the returned value of the sensor we mapped:
+  - is_close = true to 0 cm
+  - is_close = false to 10 cm
 
 ## Contributing
 
