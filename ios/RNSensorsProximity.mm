@@ -1,6 +1,6 @@
 // RNSensorsProximity.m
 
-#import "ProximitySensor.h"
+#import "RNSensorsProximity.h"
 #import <React/RCTBridge.h>
 #import <React/RCTEventDispatcher.h>
 #import "RNSensorsUtils.h"
@@ -88,7 +88,26 @@ RCT_EXPORT_METHOD(startUpdates) {
 
 - (void)proximityStateDidChange:(NSNotification *)notification {
     BOOL proximityState = [UIDevice currentDevice].proximityState;
-    [self sendEventWithName:@"RNSensorsProximity" body:@{@"proximity": @(proximityState)}];
+
+    BOOL isToggle = NO;
+    BOOL isDoubleToggle = NO;
+    if (proximityState != self->lastProximityState && isToggle == NO) {
+        isToggle = YES;
+        self->toggleCount++;
+        if (self->toggleCount >= 2) {
+            self->toggleCount = 0;
+            isDoubleToggle = YES;
+        }
+    }
+    self->lastProximityState = proximityState;
+
+    [self sendEventWithName:@"RNSensorsProximity"
+                      body:@{
+                             @"is_close": @(proximityState),
+                             @"distance": @(proximityState ? 0 : 10),
+                             @"is_toggle": @(isToggle),
+                             @"is_double_toggle": @(isDoubleToggle)
+                             }];
 }
 
 RCT_EXPORT_METHOD(stopUpdates) {

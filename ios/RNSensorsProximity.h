@@ -7,6 +7,8 @@
 @interface RNSensorsProximity : RCTEventEmitter <RCTBridgeModule> {
     int logLevel;
     bool hasListeners;
+    double toggleCount;
+    bool lastProximityState;
 }
 
 - (void) isAvailableWithResolver:(RCTPromiseResolveBlock) resolve

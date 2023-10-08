@@ -30,6 +30,25 @@
 		00E356EE1AD99517003FC87E /* ProximitySensorExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProximitySensorExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ProximitySensorExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProximitySensorExampleTests.m; sourceTree = "<group>"; };
+		06C53EFB2AD3375000A2B70F /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		06C53EFC2AD3375000A2B70F /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		06C53EFD2AD3375000A2B70F /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		06C53EFE2AD3375000A2B70F /* FontAwesome6_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Regular.ttf; sourceTree = "<group>"; };
+		06C53EFF2AD3375000A2B70F /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		06C53F002AD3375000A2B70F /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		06C53F012AD3375000A2B70F /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		06C53F022AD3375000A2B70F /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		06C53F032AD3375000A2B70F /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		06C53F042AD3375000A2B70F /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		06C53F052AD3375000A2B70F /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		06C53F062AD3375000A2B70F /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		06C53F072AD3375000A2B70F /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		06C53F082AD3375000A2B70F /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		06C53F092AD3375000A2B70F /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		06C53F0A2AD3375000A2B70F /* FontAwesome6_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Solid.ttf; sourceTree = "<group>"; };
+		06C53F0B2AD3375000A2B70F /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		06C53F0C2AD3375000A2B70F /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
+		06C53F0D2AD3375000A2B70F /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ProximitySensorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProximitySensorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ProximitySensorExample/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = ProximitySensorExample/AppDelegate.mm; sourceTree = "<group>"; };
@@ -83,6 +102,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		06C53EFA2AD3375000A2B70F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				06C53EFB2AD3375000A2B70F /* Fontisto.ttf */,
+				06C53EFC2AD3375000A2B70F /* Octicons.ttf */,
+				06C53EFD2AD3375000A2B70F /* Feather.ttf */,
+				06C53EFE2AD3375000A2B70F /* FontAwesome6_Regular.ttf */,
+				06C53EFF2AD3375000A2B70F /* Entypo.ttf */,
+				06C53F002AD3375000A2B70F /* FontAwesome5_Brands.ttf */,
+				06C53F012AD3375000A2B70F /* MaterialCommunityIcons.ttf */,
+				06C53F022AD3375000A2B70F /* AntDesign.ttf */,
+				06C53F032AD3375000A2B70F /* Foundation.ttf */,
+				06C53F042AD3375000A2B70F /* Ionicons.ttf */,
+				06C53F052AD3375000A2B70F /* FontAwesome5_Solid.ttf */,
+				06C53F062AD3375000A2B70F /* FontAwesome5_Regular.ttf */,
+				06C53F072AD3375000A2B70F /* FontAwesome.ttf */,
+				06C53F082AD3375000A2B70F /* Zocial.ttf */,
+				06C53F092AD3375000A2B70F /* EvilIcons.ttf */,
+				06C53F0A2AD3375000A2B70F /* FontAwesome6_Solid.ttf */,
+				06C53F0B2AD3375000A2B70F /* SimpleLineIcons.ttf */,
+				06C53F0C2AD3375000A2B70F /* FontAwesome6_Brands.ttf */,
+				06C53F0D2AD3375000A2B70F /* MaterialIcons.ttf */,
+			);
+			name = Fonts;
+			path = "../node_modules/react-native-vector-icons/Fonts";
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* ProximitySensorExample */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +162,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				06C53EFA2AD3375000A2B70F /* Fonts */,
 				13B07FAE1A68108700A75B9A /* ProximitySensorExample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ProximitySensorExampleTests */,
@@ -486,6 +533,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3HHZHJM4Z3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ProximitySensorExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -513,6 +561,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3HHZHJM4Z3;
 				INFOPLIST_FILE = ProximitySensorExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -604,7 +653,6 @@
 					"$(inherited)",
 					"-Wl",
 					"-ld_classic",
-					" ",
 					"-Wl -ld_classic ",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
@@ -680,7 +728,6 @@
 					"$(inherited)",
 					"-Wl",
 					"-ld_classic",
-					" ",
 					"-Wl -ld_classic ",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";

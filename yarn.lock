@@ -3192,12 +3192,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-native-vector-icons@npm:^6.4.15":
+  version: 6.4.15
+  resolution: "@types/react-native-vector-icons@npm:6.4.15"
+  dependencies:
+    "@types/react": "*"
+    "@types/react-native": ^0.70
+  checksum: 0b12ffdebab207727bafe2707e34152eefb0d4139837af8bdea524c06888cfec157df17fff33162baf91fb99ed8a0d9f4b87e0afb1a944495d256c2673d5518f
+  languageName: node
+  linkType: hard
+
 "@types/react-native@npm:0.70.0":
   version: 0.70.0
   resolution: "@types/react-native@npm:0.70.0"
   dependencies:
     "@types/react": "*"
   checksum: 0150a5520925ae009e49eb81e4ca528548ec118b95c363516362bba39ffc068f0df97c43e4543c10ac8f514a42e48cad312c9da49e37257c62180b36f921fa84
+  languageName: node
+  linkType: hard
+
+"@types/react-native@npm:^0.70":
+  version: 0.70.15
+  resolution: "@types/react-native@npm:0.70.15"
+  dependencies:
+    "@types/react": "*"
+  checksum: a69f564d5d771f062b9ef5c09e9c3f9c3b1d4e0859990e3dcf2ee6429f09af53467e901853987906e94ef4171ed32748b759442bd7d33b12f8a5f7da048ae9af
   languageName: node
   linkType: hard
 
@@ -10704,7 +10723,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:*, prop-types@npm:^15.8.1":
+"prop-types@npm:*, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -10900,6 +10919,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-linear-gradient@npm:^2.8.3":
+  version: 2.8.3
+  resolution: "react-native-linear-gradient@npm:2.8.3"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: f980d324e551bbc475c6406bdc5250a08242020cbe653412fa169bbdf51e28a502e225de105b4d696d6a1a1b733d44782469020f4936d8b3ce0e2c78e51cf58f
+  languageName: node
+  linkType: hard
+
 "react-native-proximity-sensor-example@workspace:example":
   version: 0.0.0-use.local
   resolution: "react-native-proximity-sensor-example@workspace:example"
@@ -10908,11 +10937,15 @@ __metadata:
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
     "@react-native/metro-config": ^0.72.11
+    "@types/react-native-vector-icons": ^6.4.15
     babel-plugin-module-resolver: ^5.0.0
     metro-react-native-babel-preset: 0.76.8
     pod-install: ^0.1.0
     react: 18.2.0
     react-native: 0.72.5
+    react-native-linear-gradient: ^2.8.3
+    react-native-shimmer-placeholder: ^2.0.9
+    react-native-vector-icons: ^10.0.0
   languageName: unknown
   linkType: soft
 
@@ -10946,6 +10979,31 @@ __metadata:
     react-native: "*"
   languageName: unknown
   linkType: soft
+
+"react-native-shimmer-placeholder@npm:^2.0.9":
+  version: 2.0.9
+  resolution: "react-native-shimmer-placeholder@npm:2.0.9"
+  peerDependencies:
+    prop-types: ">=15.6.0"
+    react-native-linear-gradient: ">=2.4.0"
+  checksum: 72ef49877c66994acbae7be2e810aef20ced6301b5146c36f671876525d8904e3810af69e277ffe390f05925021f44e3dd16ea04f7e3782ca57610d36d723d54
+  languageName: node
+  linkType: hard
+
+"react-native-vector-icons@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "react-native-vector-icons@npm:10.0.0"
+  dependencies:
+    prop-types: ^15.7.2
+    yargs: ^16.1.1
+  bin:
+    fa-upgrade.sh: bin/fa-upgrade.sh
+    fa5-upgrade: bin/fa5-upgrade.sh
+    fa6-upgrade: bin/fa6-upgrade.sh
+    generate-icon: bin/generate-icon.js
+  checksum: c4e39deb5218b6ba047c378217bbc7f24c1db153d2171e42176703a775049ed24f2a140f35d962d215265032722a24cba8acc83397ef6e14bd300db470609bf5
+  languageName: node
+  linkType: hard
 
 "react-native@npm:0.72.5":
   version: 0.72.5
@@ -13385,7 +13443,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:^16.2.0":
+"yargs@npm:^16.1.1, yargs@npm:^16.2.0":
   version: 16.2.0
   resolution: "yargs@npm:16.2.0"
   dependencies:

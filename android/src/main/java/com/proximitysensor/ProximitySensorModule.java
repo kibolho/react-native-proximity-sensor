@@ -31,6 +31,13 @@ public class ProximitySensorModule extends ReactContextBaseJavaModule implements
   private int logLevel = 0;
   private int listenerCount = 0;
 
+  private boolean isClose = false;
+  private boolean isToggle = false;
+  private boolean isDoubleToggle = false;
+  private double countToggle = 0;
+  private double lastCloseTime = 0;
+  private double lastFarTime = 0;
+
   public ProximitySensorModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this.reactContext = reactContext;
@@ -100,8 +107,43 @@ public class ProximitySensorModule extends ReactContextBaseJavaModule implements
     double tempMs = (double) System.currentTimeMillis();
     if (tempMs - lastReading >= interval) {
       lastReading = tempMs;
+
+      float distance = sensorEvent.values[0];
+
+      isToggle = false;
+
+      if (distance <= 3) {
+        if (tempMs - lastCloseTime >= 500) {
+          if(isClose != true){
+            isToggle = true;
+            isClose = true;
+          }
+          lastCloseTime = tempMs;
+        }
+      } else if (distance >= 7) {
+        if (tempMs - lastFarTime >= 500) {
+          if(isClose != false){
+            isToggle = true;
+            isClose = false;
+          }
+          lastFarTime = tempMs;
+        }
+      }
+
+      isDoubleToggle = false;
+      if(isToggle){
+        countToggle++;
+        if(countToggle >= 2){
+          isDoubleToggle = true;
+          countToggle = 0;
+        }
+      }
+
       WritableMap map = this.arguments.createMap();
-      map.putDouble("proximity", sensorEvent.values[0]);
+      map.putDouble("distance", distance);
+      map.putBoolean("is_close", isClose);
+      map.putBoolean("is_toggle", isToggle);
+      map.putBoolean("is_double_toggle", isDoubleToggle);
       map.putDouble("timestamp", this.sensorTimestampToEpochMilliseconds(sensorEvent.timestamp));
       this.sendEvent("RNSensorsProximity", map);
     }

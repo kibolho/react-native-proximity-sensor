@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 import { Observable } from 'rxjs';
 import { publish, refCount } from 'rxjs/operators';
+import type { Unsubscribable } from 'rxjs';
 import * as RNSensors from './rnsensors';
 
 const LINKING_ERROR =
@@ -64,7 +65,15 @@ const subscribe = (observer: {
 
   return unsubscribeCallback;
 };
-function createSensorObservable() {
+
+interface Observer {
+  distance: number;
+  is_close: boolean;
+  is_toggle: boolean;
+  is_double_toggle: boolean;
+}
+
+function createSensorObservable(): Observable<Observer> {
   return Observable.create(subscribe).pipe(makeSingleton());
 }
 
@@ -72,5 +81,5 @@ function createSensorObservable() {
 function makeSingleton() {
   return (source: any) => source.pipe(publish(), refCount());
 }
-
+export type SubscriptionRef = Unsubscribable;
 export default createSensorObservable();
