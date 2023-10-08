@@ -2,6 +2,10 @@
 
 Retrieve proximity sensor data from IOS and Android.
 
+| IOS         | Android           |
+| -----------      | -----------           |
+| ![Example with ios](.github/assets/ProximitySensorIOS.gif)         | ![Example with android](.github/assets/ProximitySensorAndroid.gif)  |
+
 ## Installation
 
 ```sh
