@@ -59,4 +59,6 @@ MIT
 
 ---
 
+Inspired in [react-native-sensors](https://www.npmjs.com/package/react-native-sensors)
 Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+
