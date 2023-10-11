@@ -82,7 +82,11 @@ RCT_EXPORT_METHOD(startUpdates) {
     dispatch_async(dispatch_get_main_queue(), ^{
         UIDevice *currentDevice = [UIDevice currentDevice];
         currentDevice.proximityMonitoringEnabled = YES;
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(proximityStateDidChange:) name:UIDeviceProximityStateDidChangeNotification object:nil];
+        [[NSNotificationCenter defaultCenter]
+                        addObserver:self
+                        selector:@selector(proximityStateDidChange:)
+                        name:UIDeviceProximityStateDidChangeNotification
+                        object:nil];
     });
 }
 
@@ -103,11 +107,11 @@ RCT_EXPORT_METHOD(startUpdates) {
 
     [self sendEventWithName:@"RNSensorsProximity"
                       body:@{
-                             @"is_close": @(proximityState),
-                             @"distance": @(proximityState ? 0 : 10),
-                             @"is_toggle": @(isToggle),
-                             @"is_double_toggle": @(isDoubleToggle)
-                             }];
+                            @"is_close": @(proximityState),
+                            @"distance": @(proximityState ? 0 : 10),
+                            @"is_toggle": @(isToggle),
+                            @"is_double_toggle": @(isDoubleToggle)
+                            }];
 }
 
 RCT_EXPORT_METHOD(stopUpdates) {
